@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CE058E11BFB03CC001A3CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E01BFB03CC001A3CAA /* main.m */; };
+		4CE058E41BFB03CC001A3CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E31BFB03CC001A3CAA /* AppDelegate.m */; };
+		4CE058E71BFB03CC001A3CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E61BFB03CC001A3CAA /* ViewController.m */; };
+		4CE058EA1BFB03CC001A3CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058E81BFB03CC001A3CAA /* Main.storyboard */; };
+		4CE058EC1BFB03CC001A3CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */; };
+		4CE058EF1BFB03CC001A3CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */; };
+		4CE058FA1BFB03CC001A3CAA /* Talk2MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058F91BFB03CC001A3CAA /* Talk2MeTests.m */; };
+		4CE059051BFB03CC001A3CAA /* Talk2MeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CE058F61BFB03CC001A3CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CE058D41BFB03CC001A3CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE058DB1BFB03CC001A3CAA;
+			remoteInfo = Talk2Me;
+		};
+		4CE059011BFB03CC001A3CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CE058D41BFB03CC001A3CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE058DB1BFB03CC001A3CAA;
+			remoteInfo = Talk2Me;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CE058DC1BFB03CC001A3CAA /* Talk2Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk2Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE058E01BFB03CC001A3CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CE058E21BFB03CC001A3CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CE058E31BFB03CC001A3CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CE058E51BFB03CC001A3CAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CE058E61BFB03CC001A3CAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CE058E91BFB03CC001A3CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CE058EE1BFB03CC001A3CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CE058F01BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE058F51BFB03CC001A3CAA /* Talk2MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Talk2MeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE058F91BFB03CC001A3CAA /* Talk2MeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Talk2MeTests.m; sourceTree = "<group>"; };
+		4CE058FB1BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE059001BFB03CC001A3CAA /* Talk2MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Talk2MeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Talk2MeUITests.m; sourceTree = "<group>"; };
+		4CE059061BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CE058D91BFB03CC001A3CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058F21BFB03CC001A3CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058FD1BFB03CC001A3CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CE058D31BFB03CC001A3CAA = {
+			isa = PBXGroup;
+			children = (
+				4CE058DE1BFB03CC001A3CAA /* Talk2Me */,
+				4CE058F81BFB03CC001A3CAA /* Talk2MeTests */,
+				4CE059031BFB03CC001A3CAA /* Talk2MeUITests */,
+				4CE058DD1BFB03CC001A3CAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CE058DD1BFB03CC001A3CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CE058DC1BFB03CC001A3CAA /* Talk2Me.app */,
+				4CE058F51BFB03CC001A3CAA /* Talk2MeTests.xctest */,
+				4CE059001BFB03CC001A3CAA /* Talk2MeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CE058DE1BFB03CC001A3CAA /* Talk2Me */ = {
+			isa = PBXGroup;
+			children = (
+				4CE058E21BFB03CC001A3CAA /* AppDelegate.h */,
+				4CE058E31BFB03CC001A3CAA /* AppDelegate.m */,
+				4CE058E51BFB03CC001A3CAA /* ViewController.h */,
+				4CE058E61BFB03CC001A3CAA /* ViewController.m */,
+				4CE058E81BFB03CC001A3CAA /* Main.storyboard */,
+				4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */,
+				4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */,
+				4CE058F01BFB03CC001A3CAA /* Info.plist */,
+				4CE058DF1BFB03CC001A3CAA /* Supporting Files */,
+			);
+			path = Talk2Me;
+			sourceTree = "<group>";
+		};
+		4CE058DF1BFB03CC001A3CAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CE058E01BFB03CC001A3CAA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CE058F81BFB03CC001A3CAA /* Talk2MeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CE058F91BFB03CC001A3CAA /* Talk2MeTests.m */,
+				4CE058FB1BFB03CC001A3CAA /* Info.plist */,
+			);
+			path = Talk2MeTests;
+			sourceTree = "<group>";
+		};
+		4CE059031BFB03CC001A3CAA /* Talk2MeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */,
+				4CE059061BFB03CC001A3CAA /* Info.plist */,
+			);
+			path = Talk2MeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CE058DB1BFB03CC001A3CAA /* Talk2Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE059091BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2Me" */;
+			buildPhases = (
+				4CE058D81BFB03CC001A3CAA /* Sources */,
+				4CE058D91BFB03CC001A3CAA /* Frameworks */,
+				4CE058DA1BFB03CC001A3CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Talk2Me;
+			productName = Talk2Me;
+			productReference = 4CE058DC1BFB03CC001A3CAA /* Talk2Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CE058F41BFB03CC001A3CAA /* Talk2MeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE0590C1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeTests" */;
+			buildPhases = (
+				4CE058F11BFB03CC001A3CAA /* Sources */,
+				4CE058F21BFB03CC001A3CAA /* Frameworks */,
+				4CE058F31BFB03CC001A3CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CE058F71BFB03CC001A3CAA /* PBXTargetDependency */,
+			);
+			name = Talk2MeTests;
+			productName = Talk2MeTests;
+			productReference = 4CE058F51BFB03CC001A3CAA /* Talk2MeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CE058FF1BFB03CC001A3CAA /* Talk2MeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE0590F1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeUITests" */;
+			buildPhases = (
+				4CE058FC1BFB03CC001A3CAA /* Sources */,
+				4CE058FD1BFB03CC001A3CAA /* Frameworks */,
+				4CE058FE1BFB03CC001A3CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CE059021BFB03CC001A3CAA /* PBXTargetDependency */,
+			);
+			name = Talk2MeUITests;
+			productName = Talk2MeUITests;
+			productReference = 4CE059001BFB03CC001A3CAA /* Talk2MeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CE058D41BFB03CC001A3CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Michael;
+				TargetAttributes = {
+					4CE058DB1BFB03CC001A3CAA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					4CE058F41BFB03CC001A3CAA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4CE058DB1BFB03CC001A3CAA;
+					};
+					4CE058FF1BFB03CC001A3CAA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4CE058DB1BFB03CC001A3CAA;
+					};
+				};
+			};
+			buildConfigurationList = 4CE058D71BFB03CC001A3CAA /* Build configuration list for PBXProject "Talk2Me" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CE058D31BFB03CC001A3CAA;
+			productRefGroup = 4CE058DD1BFB03CC001A3CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CE058DB1BFB03CC001A3CAA /* Talk2Me */,
+				4CE058F41BFB03CC001A3CAA /* Talk2MeTests */,
+				4CE058FF1BFB03CC001A3CAA /* Talk2MeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CE058DA1BFB03CC001A3CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE058EF1BFB03CC001A3CAA /* LaunchScreen.storyboard in Resources */,
+				4CE058EC1BFB03CC001A3CAA /* Assets.xcassets in Resources */,
+				4CE058EA1BFB03CC001A3CAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058F31BFB03CC001A3CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058FE1BFB03CC001A3CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CE058D81BFB03CC001A3CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE058E71BFB03CC001A3CAA /* ViewController.m in Sources */,
+				4CE058E41BFB03CC001A3CAA /* AppDelegate.m in Sources */,
+				4CE058E11BFB03CC001A3CAA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058F11BFB03CC001A3CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE058FA1BFB03CC001A3CAA /* Talk2MeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE058FC1BFB03CC001A3CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE059051BFB03CC001A3CAA /* Talk2MeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CE058F71BFB03CC001A3CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CE058DB1BFB03CC001A3CAA /* Talk2Me */;
+			targetProxy = 4CE058F61BFB03CC001A3CAA /* PBXContainerItemProxy */;
+		};
+		4CE059021BFB03CC001A3CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CE058DB1BFB03CC001A3CAA /* Talk2Me */;
+			targetProxy = 4CE059011BFB03CC001A3CAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CE058E81BFB03CC001A3CAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE058E91BFB03CC001A3CAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE058EE1BFB03CC001A3CAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CE059071BFB03CC001A3CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CE059081BFB03CC001A3CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CE0590A1BFB03CC001A3CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Talk2Me/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2Me;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CE0590B1BFB03CC001A3CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Talk2Me/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2Me;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CE0590D1BFB03CC001A3CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Talk2MeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2MeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talk2Me.app/Talk2Me";
+			};
+			name = Debug;
+		};
+		4CE0590E1BFB03CC001A3CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Talk2MeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2MeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talk2Me.app/Talk2Me";
+			};
+			name = Release;
+		};
+		4CE059101BFB03CC001A3CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Talk2MeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2MeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Talk2Me;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4CE059111BFB03CC001A3CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Talk2MeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.Talk2MeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Talk2Me;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CE058D71BFB03CC001A3CAA /* Build configuration list for PBXProject "Talk2Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE059071BFB03CC001A3CAA /* Debug */,
+				4CE059081BFB03CC001A3CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE059091BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE0590A1BFB03CC001A3CAA /* Debug */,
+				4CE0590B1BFB03CC001A3CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CE0590C1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE0590D1BFB03CC001A3CAA /* Debug */,
+				4CE0590E1BFB03CC001A3CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CE0590F1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE059101BFB03CC001A3CAA /* Debug */,
+				4CE059111BFB03CC001A3CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CE058D41BFB03CC001A3CAA /* Project object */;
+}
