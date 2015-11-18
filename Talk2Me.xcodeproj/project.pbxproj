@@ -10,11 +10,11 @@
 		4CE058E11BFB03CC001A3CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E01BFB03CC001A3CAA /* main.m */; };
 		4CE058E41BFB03CC001A3CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E31BFB03CC001A3CAA /* AppDelegate.m */; };
 		4CE058E71BFB03CC001A3CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E61BFB03CC001A3CAA /* ViewController.m */; };
-		4CE058EA1BFB03CC001A3CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058E81BFB03CC001A3CAA /* Main.storyboard */; };
 		4CE058EC1BFB03CC001A3CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */; };
 		4CE058EF1BFB03CC001A3CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */; };
 		4CE058FA1BFB03CC001A3CAA /* Talk2MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058F91BFB03CC001A3CAA /* Talk2MeTests.m */; };
 		4CE059051BFB03CC001A3CAA /* Talk2MeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */; };
+		750A3F5E52DDD281EA900B34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0854111A8D5F92D7B4D36B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		4CE058E31BFB03CC001A3CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CE058E51BFB03CC001A3CAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4CE058E61BFB03CC001A3CAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4CE058E91BFB03CC001A3CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CE058EE1BFB03CC001A3CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CE058F01BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		4CE059001BFB03CC001A3CAA /* Talk2MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Talk2MeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Talk2MeUITests.m; sourceTree = "<group>"; };
 		4CE059061BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7941A42DBDDA5A8A273D5193 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		833290905F21E444AEF6A26E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8E0854111A8D5F92D7B4D36B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750A3F5E52DDD281EA900B34 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA81A3C7978586CC28FD9E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0854111A8D5F92D7B4D36B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CE058D31BFB03CC001A3CAA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +96,8 @@
 				4CE058F81BFB03CC001A3CAA /* Talk2MeTests */,
 				4CE059031BFB03CC001A3CAA /* Talk2MeUITests */,
 				4CE058DD1BFB03CC001A3CAA /* Products */,
+				5C0D51D4E53759454A69E2E8 /* Pods */,
+				3EA81A3C7978586CC28FD9E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +118,6 @@
 				4CE058E31BFB03CC001A3CAA /* AppDelegate.m */,
 				4CE058E51BFB03CC001A3CAA /* ViewController.h */,
 				4CE058E61BFB03CC001A3CAA /* ViewController.m */,
-				4CE058E81BFB03CC001A3CAA /* Main.storyboard */,
 				4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */,
 				4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */,
 				4CE058F01BFB03CC001A3CAA /* Info.plist */,
@@ -140,6 +152,15 @@
 			path = Talk2MeUITests;
 			sourceTree = "<group>";
 		};
+		5C0D51D4E53759454A69E2E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7941A42DBDDA5A8A273D5193 /* Pods.debug.xcconfig */,
+				833290905F21E444AEF6A26E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE059091BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2Me" */;
 			buildPhases = (
+				BCA6533F71EA39D0F89F61C7 /* Check Pods Manifest.lock */,
 				4CE058D81BFB03CC001A3CAA /* Sources */,
 				4CE058D91BFB03CC001A3CAA /* Frameworks */,
 				4CE058DA1BFB03CC001A3CAA /* Resources */,
+				03B17C92C9325B117F25EF33 /* Embed Pods Frameworks */,
+				1551AAB086A3285A7C39163B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +269,6 @@
 			files = (
 				4CE058EF1BFB03CC001A3CAA /* LaunchScreen.storyboard in Resources */,
 				4CE058EC1BFB03CC001A3CAA /* Assets.xcassets in Resources */,
-				4CE058EA1BFB03CC001A3CAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B17C92C9325B117F25EF33 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1551AAB086A3285A7C39163B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA6533F71EA39D0F89F61C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CE058D81BFB03CC001A3CAA /* Sources */ = {
@@ -308,14 +379,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CE058E81BFB03CC001A3CAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CE058E91BFB03CC001A3CAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +472,7 @@
 		};
 		4CE0590A1BFB03CC001A3CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7941A42DBDDA5A8A273D5193 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Talk2Me/Info.plist;
@@ -420,6 +484,7 @@
 		};
 		4CE0590B1BFB03CC001A3CAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833290905F21E444AEF6A26E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Talk2Me/Info.plist;
@@ -496,6 +561,7 @@
 				4CE0590B1BFB03CC001A3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE0590C1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +570,7 @@
 				4CE0590E1BFB03CC001A3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE0590F1BFB03CC001A3CAA /* Build configuration list for PBXNativeTarget "Talk2MeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +579,7 @@
 				4CE059111BFB03CC001A3CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
