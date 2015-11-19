@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SLKTextViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : SLKTextViewController
 
 
 @end
