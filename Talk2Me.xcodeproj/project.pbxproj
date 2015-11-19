@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA115C21BFC7A5D00E02C88 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA115C11BFC7A5D00E02C88 /* MessageTableViewCell.m */; };
 		4CE058E11BFB03CC001A3CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E01BFB03CC001A3CAA /* main.m */; };
 		4CE058E41BFB03CC001A3CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E31BFB03CC001A3CAA /* AppDelegate.m */; };
 		4CE058E71BFB03CC001A3CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058E61BFB03CC001A3CAA /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		4CE058EF1BFB03CC001A3CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */; };
 		4CE058FA1BFB03CC001A3CAA /* Talk2MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE058F91BFB03CC001A3CAA /* Talk2MeTests.m */; };
 		4CE059051BFB03CC001A3CAA /* Talk2MeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */; };
+		4CE059161BFC2C66001A3CAA /* MessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE059151BFC2C66001A3CAA /* MessageTextView.m */; };
+		4CE059191BFC2E1F001A3CAA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE059181BFC2E1F001A3CAA /* Message.m */; };
 		750A3F5E52DDD281EA900B34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0854111A8D5F92D7B4D36B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CA115C01BFC7A5D00E02C88 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		4CA115C11BFC7A5D00E02C88 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 		4CE058DC1BFB03CC001A3CAA /* Talk2Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk2Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE058E01BFB03CC001A3CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CE058E21BFB03CC001A3CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +55,10 @@
 		4CE059001BFB03CC001A3CAA /* Talk2MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Talk2MeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE059041BFB03CC001A3CAA /* Talk2MeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Talk2MeUITests.m; sourceTree = "<group>"; };
 		4CE059061BFB03CC001A3CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE059141BFC2C66001A3CAA /* MessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTextView.h; sourceTree = "<group>"; };
+		4CE059151BFC2C66001A3CAA /* MessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTextView.m; sourceTree = "<group>"; };
+		4CE059171BFC2E1F001A3CAA /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		4CE059181BFC2E1F001A3CAA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		7941A42DBDDA5A8A273D5193 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		833290905F21E444AEF6A26E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E0854111A8D5F92D7B4D36B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +127,12 @@
 				4CE058E31BFB03CC001A3CAA /* AppDelegate.m */,
 				4CE058E51BFB03CC001A3CAA /* ViewController.h */,
 				4CE058E61BFB03CC001A3CAA /* ViewController.m */,
+				4CE059141BFC2C66001A3CAA /* MessageTextView.h */,
+				4CE059151BFC2C66001A3CAA /* MessageTextView.m */,
+				4CE059171BFC2E1F001A3CAA /* Message.h */,
+				4CE059181BFC2E1F001A3CAA /* Message.m */,
+				4CA115C01BFC7A5D00E02C88 /* MessageTableViewCell.h */,
+				4CA115C11BFC7A5D00E02C88 /* MessageTableViewCell.m */,
 				4CE058EB1BFB03CC001A3CAA /* Assets.xcassets */,
 				4CE058ED1BFB03CC001A3CAA /* LaunchScreen.storyboard */,
 				4CE058F01BFB03CC001A3CAA /* Info.plist */,
@@ -342,8 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE058E71BFB03CC001A3CAA /* ViewController.m in Sources */,
+				4CE059161BFC2C66001A3CAA /* MessageTextView.m in Sources */,
+				4CE059191BFC2E1F001A3CAA /* Message.m in Sources */,
 				4CE058E41BFB03CC001A3CAA /* AppDelegate.m in Sources */,
 				4CE058E11BFB03CC001A3CAA /* main.m in Sources */,
+				4CA115C21BFC7A5D00E02C88 /* MessageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
