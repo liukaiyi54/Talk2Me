@@ -15,7 +15,8 @@
     if (self) {
         self.messages = [NSMutableArray new];
         
-//        JSQMessagesAvatarImage *mkImage = [JSQMessagesAvatarImageFactory avatarImageWithUserInitials:@"MK" backgroundColor:[UIColor colorWithWhite:0.85f alpha:1.0f] textColor:[UIColor colorWithWhite:0.60f alpha:1.0f] font:[UIFont systemFontOfSize:14.0f] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *jobsImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"demo_avatar_jobs"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        self.avatars = @{kJSQDemoAvatarIdJobs: jobsImage};
         
         JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
         
