@@ -33,6 +33,8 @@
     [self.messages addObject:photoMessage];
 }
 
-
+- (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion {
+    
+}
 
 @end

@@ -8,7 +8,7 @@
 
 #import "MessageViewController.h"
 
-@interface MessageViewController () <JSQMessagesComposerTextViewPasteDelegate>
+@interface MessageViewController () <JSQMessagesComposerTextViewPasteDelegate, UIActionSheetDelegate>
 
 @end
 
@@ -38,6 +38,22 @@
     [self.data.messages addObject:message];
     
     [self finishSendingMessageAnimated:YES];
+}
+
+- (void)didPressAccessoryButton:(UIButton *)sender {
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Media messages" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *photoAction = [UIAlertAction actionWithTitle:@"Send photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *locationAction = [UIAlertAction actionWithTitle:@"Send location" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [ac addAction:photoAction];
+    [ac addAction:locationAction];
+    [ac addAction:cancelAction];
+    
+    [self presentViewController:ac animated:YES completion:nil];
 }
 
 #pragma mark - JSQMessages CollectionView DataSource & Delegate
