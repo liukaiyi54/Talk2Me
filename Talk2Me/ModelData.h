@@ -25,4 +25,6 @@ static NSString * const kJSQDemoAvatarIdJobs = @"707-8956784-57";
 - (void)addPhotoMediaMessage;
 - (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion;
 
+- (void)saveModelData;
+
 @end

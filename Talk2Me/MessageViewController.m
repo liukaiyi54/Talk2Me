@@ -37,6 +37,8 @@
     
     [self.data.messages addObject:message];
     
+    [self.data saveModelData];
+    
     [self finishSendingMessageAnimated:YES];
 }
 
