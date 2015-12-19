@@ -23,6 +23,8 @@
     self.data = [[ModelData alloc] init];
     
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
+    
+    [self setupForDismissKeyboard];
 }
 
 #pragma mark - JSQMessagesViewController method overrides
@@ -177,6 +179,33 @@
                                              NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle | NSUnderlinePatternSolid)};
     }
     return cell;
+}
+
+#pragma mark - DismissKeyboard on touch screen
+- (void)setupForDismissKeyboard {
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    UITapGestureRecognizer *singleTapGR =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(tapAnywhereToDismissKeyboard:)];
+    
+    __weak typeof(self) weakSelf = self;
+    NSOperationQueue *mainQuene =[NSOperationQueue mainQueue];
+    [nc addObserverForName:UIKeyboardWillShowNotification
+                    object:nil
+                     queue:mainQuene
+                usingBlock:^(NSNotification *note){
+                    [weakSelf.view addGestureRecognizer:singleTapGR];
+                }];
+    [nc addObserverForName:UIKeyboardWillHideNotification
+                    object:nil
+                     queue:mainQuene
+                usingBlock:^(NSNotification *note){
+                    [weakSelf.view removeGestureRecognizer:singleTapGR];
+                }];
+}
+
+- (void)tapAnywhereToDismissKeyboard:(UIGestureRecognizer *)gestureRecognizer {
+    [self.view endEditing:YES];
 }
 
 @end
