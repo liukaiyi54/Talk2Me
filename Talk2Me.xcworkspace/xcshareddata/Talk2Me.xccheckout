@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>432A917D-90E4-4AE7-8C6B-BF8CF4408A0D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Talk2Me</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6C5DE4743B4D83C225498D76547BAFF8E613661</key>
+		<string>https://github.com/liukaiyi54/Talk2Me.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Talk2Me.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6C5DE4743B4D83C225498D76547BAFF8E613661</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/liukaiyi54/Talk2Me.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6C5DE4743B4D83C225498D76547BAFF8E613661</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6C5DE4743B4D83C225498D76547BAFF8E613661</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Talk2Me</string>
+		</dict>
+	</array>
+</dict>
+</plist>

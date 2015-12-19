@@ -44,10 +44,10 @@
 
 - (void)didPressAccessoryButton:(UIButton *)sender {
     UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Media messages" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *photoAction = [UIAlertAction actionWithTitle:@"Send photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *photoAction = [UIAlertAction actionWithTitle:@"Send photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
     }];
-    UIAlertAction *locationAction = [UIAlertAction actionWithTitle:@"Send location" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *locationAction = [UIAlertAction actionWithTitle:@"Send location" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
