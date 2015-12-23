@@ -20,6 +20,8 @@
     self.senderDisplayName = @"asdf";
     self.inputToolbar.contentView.textView.pasteDelegate = self;
     
+    self.title = @"Mockingbird ";
+    
     self.data = [[ModelData alloc] init];
     
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
@@ -36,8 +38,10 @@
     [JSQSystemSoundPlayer jsq_playMessageSentSound];
     
     JSQMessage *message = [[JSQMessage alloc] initWithSenderId:senderId senderDisplayName:senderDisplayName date:date text:text];
+    JSQMessage *mirrorMessage = [[JSQMessage alloc] initWithSenderId:@"Honey" senderDisplayName:@"Honey" date:date text:text];
     
     [self.data.messages addObject:message];
+    [self.data.messages addObject:mirrorMessage];
     
     [self.data saveModelData];
     
