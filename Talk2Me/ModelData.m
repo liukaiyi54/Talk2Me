@@ -15,8 +15,10 @@
     if (self) {
         [self loadMessages];
         
-        JSQMessagesAvatarImage *jobsImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"demo_avatar_jobs"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        self.avatars = @{kJSQDemoAvatarIdJobs: jobsImage};
+        JSQMessagesAvatarImage *jobsImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"me"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *honeyImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"pretty"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        
+        self.avatars = @{kJSQDemoAvatarIdJobs: jobsImage, @"Honey": honeyImage};
         
         JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
         

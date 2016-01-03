@@ -20,7 +20,7 @@
     self.senderDisplayName = @"asdf";
     self.inputToolbar.contentView.textView.pasteDelegate = self;
     
-    self.title = @"Mockingbird ";
+    self.title = @"Mockingbird";
     
     self.data = [[ModelData alloc] init];
     
