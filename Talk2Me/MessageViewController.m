@@ -175,9 +175,9 @@
     
     if (!message.isMediaMessage) {
         if ([message.senderId isEqualToString:self.senderId]) {
-            cell.textView.textColor = [UIColor blackColor];
-        } else {
             cell.textView.textColor = [UIColor whiteColor];
+        } else {
+            cell.textView.textColor = [UIColor blackColor];
         }
         
         cell.textView.linkTextAttributes = @{NSForegroundColorAttributeName: cell.textView.textColor,
