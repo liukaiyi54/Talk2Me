@@ -9,6 +9,7 @@
 #import "MessageViewController.h"
 
 @interface MessageViewController () <JSQMessagesComposerTextViewPasteDelegate, UIActionSheetDelegate>
+@property (nonatomic, strong) UIButton *titleButton;
 
 @end
 
@@ -16,11 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.senderId = kJSQDemoAvatarIdJobs;
-    self.senderDisplayName = @"asdf";
-    self.inputToolbar.contentView.textView.pasteDelegate = self;
     
-    self.title = @"Mockingbird";
+    [self setupTitleButton];
+
+    self.senderId = @"Me";
+    self.senderDisplayName = @"Honey";
+    self.inputToolbar.contentView.textView.pasteDelegate = self;
     
     self.data = [[ModelData alloc] init];
     
@@ -37,11 +39,11 @@
                       date:(NSDate *)date {
     [JSQSystemSoundPlayer jsq_playMessageSentSound];
     
+    senderId = self.titleButton.titleLabel.text;
+    
     JSQMessage *message = [[JSQMessage alloc] initWithSenderId:senderId senderDisplayName:senderDisplayName date:date text:text];
-    JSQMessage *mirrorMessage = [[JSQMessage alloc] initWithSenderId:@"Honey" senderDisplayName:@"Honey" date:date text:text];
     
     [self.data.messages addObject:message];
-    [self.data.messages addObject:mirrorMessage];
     
     [self.data saveModelData];
     
@@ -211,6 +213,24 @@
 
 - (void)tapAnywhereToDismissKeyboard:(UIGestureRecognizer *)gestureRecognizer {
     [self.view endEditing:YES];
+}
+
+#pragma mark - private
+- (void)setupTitleButton {
+    self.titleButton = [[UIButton alloc] init];
+    [self.titleButton setTitle:@"Honey" forState:UIControlStateNormal];
+    [self.titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.titleButton addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
+
+    self.navigationItem.titleView = self.titleButton;
+}
+
+- (void)didTapTitle:(UIButton *)sender {
+    if ([sender.titleLabel.text isEqualToString:@"Honey"]) {
+        [sender setTitle:@"Me" forState:UIControlStateNormal];
+    } else {
+        [sender setTitle:@"Honey" forState:UIControlStateNormal];
+    }
 }
 
 @end
