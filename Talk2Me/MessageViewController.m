@@ -8,6 +8,8 @@
 
 #import "MessageViewController.h"
 
+#import <UIImagePickerController+BlocksKit.h>
+
 @interface MessageViewController () <JSQMessagesComposerTextViewPasteDelegate, UIActionSheetDelegate>
 @property (nonatomic, strong) UIButton *titleButton;
 
@@ -53,7 +55,7 @@
 - (void)didPressAccessoryButton:(UIButton *)sender {
     UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Media messages" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *photoAction = [UIAlertAction actionWithTitle:@"Send photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
+        [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }];
     UIAlertAction *locationAction = [UIAlertAction actionWithTitle:@"Send location" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         
@@ -231,6 +233,28 @@
     } else {
         [sender setTitle:@"Honey" forState:UIControlStateNormal];
     }
+}
+
+- (void)showImagePickerWithSourceType:(UIImagePickerControllerSourceType)sourceType {
+    UIImagePickerController *imgPickerController = [[UIImagePickerController alloc] init];
+    [imgPickerController setSourceType:sourceType];
+    [imgPickerController setAllowsEditing:YES];
+    imgPickerController.bk_didCancelBlock = ^(UIImagePickerController *controller) {
+        [controller dismissViewControllerAnimated:YES completion:nil];
+    };
+    
+    __weak typeof(self) weakSelf = self;
+    imgPickerController.bk_didFinishPickingMediaBlock = ^(UIImagePickerController *controller, NSDictionary *dict) {
+        [controller dismissViewControllerAnimated:YES completion:nil];
+        UIImage *image = dict[UIImagePickerControllerEditedImage];
+        JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:image];
+        JSQMessage *photoMessage = [JSQMessage messageWithSenderId:self.senderId displayName:self.senderDisplayName media:photoItem];
+        [weakSelf.data.messages addObject:photoMessage];
+        [weakSelf.data saveModelData];
+        [weakSelf.collectionView reloadData];
+    };
+    
+    [self presentViewController:imgPickerController animated:YES completion:nil];
 }
 
 @end
