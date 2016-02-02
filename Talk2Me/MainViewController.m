@@ -7,8 +7,12 @@
 //
 
 #import "MainViewController.h"
+#import "MessageViewController.h"
 
-@interface MainViewController ()
+static NSString *const kTableViewCell = @"TableViewCell";
+
+@interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
@@ -20,6 +24,45 @@
     [self setupBarButton];
     
     self.title = @"Messages";
+    
+    [self setupTableView];
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kTableViewCell];
+    cell.textLabel.text = @"Honey";
+    cell.detailTextLabel.text = @"hello";
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MessageViewController *vc = [[MessageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - private
+- (void)setupTableView {
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewCell];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (void)setupBarButton {
